@@ -1,0 +1,108 @@
+﻿/* Brand Logos Styles */
+.brand-logos {
+  padding: 60px 0;
+  background: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+}
+
+.brands-content {
+  text-align: center;
+}
+
+.brands-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 40px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.brands-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 30px;
+  overflow-x: auto;
+  padding: 20px 0;
+}
+
+.brand-item {
+  padding: 20px 30px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.brand-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-color: #007bff;
+}
+
+.brand-logo {
+  max-width: 120px;
+  max-height: 60px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.brand-item:hover .brand-logo {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .brand-logos {
+    padding: 40px 0;
+  }
+  
+  .brands-grid {
+    gap: 20px;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .brand-item {
+    padding: 15px 20px;
+    min-height: 70px;
+  }
+  
+  .brand-logo {
+    max-width: 100px;
+    max-height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brands-grid {
+    gap: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .brand-item {
+    padding: 12px 16px;
+    min-height: 60px;
+  }
+  
+  .brand-logo {
+    max-width: 80px;
+    max-height: 40px;
+  }
+}

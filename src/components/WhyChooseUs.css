@@ -1,0 +1,101 @@
+﻿/* Why Choose Us Section */
+.why-choose-us {
+  padding: 80px 0;
+  background: #F5F5F5;
+}
+
+.why-choose-content {
+  display: flex;
+  gap: 100px;
+  align-items: stretch;
+}
+
+.why-choose-text {
+  flex: 1;
+  max-width: 400px;
+}
+
+.why-choose-text .section-title h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.2;
+  color: #141414;
+  margin-bottom: 20px;
+}
+
+.why-choose-text .section-title p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #939393;
+  margin-bottom: 30px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  flex: 1;
+}
+
+.feature-card {
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+}
+
+.icon-circle {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon-image {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon-image {
+  transform: scale(1.1);
+}
+
+.feature-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #141414;
+  margin-bottom: 10px;
+}
+
+.feature-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #939393;
+}
+
+@media (max-width: 768px) {
+  .why-choose-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}

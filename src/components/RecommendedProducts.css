@@ -1,0 +1,29 @@
+﻿/* Recommended Products Section */
+.recommended-products {
+  padding: 80px 0;
+  background: #FFFFFF;
+}
+
+.recommended-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.recommended-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .recommended-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .recommended-row {
+    grid-template-columns: 1fr;
+  }
+}
