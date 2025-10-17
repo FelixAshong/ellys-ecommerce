@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import './WhyChooseUs.css';
 import { FaArrowRight } from 'react-icons/fa';
 

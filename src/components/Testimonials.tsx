@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import './Testimonials.css';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 

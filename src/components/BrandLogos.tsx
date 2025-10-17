@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import './BrandLogos.css';
 
 // Import brand logo images

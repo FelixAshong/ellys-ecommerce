@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import './FeaturedProducts.css';
 import { FaStar, FaStarHalfAlt, FaArrowRight } from 'react-icons/fa';
 

@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 import { FaSearch, FaShoppingCart, FaUser, FaBars, FaChevronDown } from 'react-icons/fa';
 
