@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import './Newsletter.css';
 import { FaArrowRight } from 'react-icons/fa';
 
