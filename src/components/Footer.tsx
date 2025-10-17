@@ -15,13 +15,13 @@ const Footer: React.FC = () => {
         <div className="footer-top">
           <div className="social-payment">
             <div className="social-media">
-              <a href="#" className="social-link facebook">
+              <a href="https://facebook.com" className="social-link facebook">
                 <FacebookIcon />
               </a>
-              <a href="#" className="social-link instagram">
+              <a href="https://instagram.com" className="social-link instagram">
                 <InstagramIcon />
               </a>
-              <a href="#" className="social-link snapchat">
+              <a href="https://snapchat.com" className="social-link snapchat">
                 <SnapchatIcon />
               </a>
             </div>
@@ -51,30 +51,30 @@ const Footer: React.FC = () => {
           <div className="footer-column">
             <h4>HELP & INFORMATION</h4>
             <ul>
-              <li><a href="#">Help</a></li>
-              <li><a href="#">Track order</a></li>
-              <li><a href="#">Delivery & returns</a></li>
-              <li><a href="#">Sitemap</a></li>
+              <li><a href="/help">Help</a></li>
+              <li><a href="/track-order">Track order</a></li>
+              <li><a href="/delivery-returns">Delivery & returns</a></li>
+              <li><a href="/sitemap">Sitemap</a></li>
             </ul>
           </div>
           
           <div className="footer-column">
             <h4>ABOUT ELLY'S HOUSE</h4>
             <ul>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Careers at ELLY's House</a></li>
-              <li><a href="#">Corporate responsibility</a></li>
-              <li><a href="#">Investors' site</a></li>
+              <li><a href="/about">About us</a></li>
+              <li><a href="/careers">Careers at ELLY's House</a></li>
+              <li><a href="/corporate-responsibility">Corporate responsibility</a></li>
+              <li><a href="/investors">Investors' site</a></li>
             </ul>
           </div>
           
           <div className="footer-column">
             <h4>MORE FROM ELLY'S HOUSE</h4>
             <ul>
-              <li><a href="#">Mobile and ELLY's House apps</a></li>
-              <li><a href="#">Gift vouchers</a></li>
-              <li><a href="#">Black Friday</a></li>
-              <li><a href="#">ELLY's House x Thrift+</a></li>
+              <li><a href="/mobile-apps">Mobile and ELLY's House apps</a></li>
+              <li><a href="/gift-vouchers">Gift vouchers</a></li>
+              <li><a href="/black-friday">Black Friday</a></li>
+              <li><a href="/thrift-plus">ELLY's House x Thrift+</a></li>
             </ul>
           </div>
           
@@ -113,11 +113,11 @@ const Footer: React.FC = () => {
             <span>© 2025 ELLY's House</span>
           </div>
           <div className="footer-legal">
-            <a href="#">Privacy & Cookies</a>
+            <a href="/privacy">Privacy & Cookies</a>
             <span>|</span>
-            <a href="#">Ts&Cs</a>
+            <a href="/terms">Ts&Cs</a>
             <span>|</span>
-            <a href="#">Accessibility</a>
+            <a href="/accessibility">Accessibility</a>
           </div>
         </div>
       </div>

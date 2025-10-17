@@ -11,10 +11,6 @@ const Hero: React.FC = () => {
       <div className="container">
         <div className="hero-content">
           <div className="hero-text">
-            <div className="hero-badge">
-              <div className="badge-dot"></div>
-              <span>ELLY's House - Your Fashion Destination</span>
-            </div>
             <h2 className="hero-subtitle">Style for Everyone, Everywhere</h2>
             <p className="hero-description">
               Discover the latest trends in men's, women's, and children's clothing. From casual wear to formal attire, we have everything you need to express your unique style.

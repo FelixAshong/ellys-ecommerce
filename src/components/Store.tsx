@@ -24,7 +24,7 @@ interface StoreProduct {
 
 const Store: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
-  const [cart, setCart] = useState<StoreProduct[]>([]);
+  const [, setCart] = useState<StoreProduct[]>([]);
 
   const products: StoreProduct[] = [
     {

@@ -33,18 +33,18 @@ const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
           <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&h=60&fit=crop" alt="ELLY's House" className="logo-image" />
         </div>
           <nav className={`nav-menu ${isMenuOpen ? 'nav-menu-open' : ''}`}>
-            <a href="#" onClick={(e) => { e.preventDefault(); handleNavigation('home'); }} className="nav-link">Home</a>
-            <a href="#" onClick={(e) => { e.preventDefault(); handleNavigation('about'); }} className="nav-link">About</a>
+            <button onClick={() => handleNavigation('home')} className="nav-link">Home</button>
+            <button onClick={() => handleNavigation('about')} className="nav-link">About</button>
             <div className="nav-dropdown">
-              <a href="#" className="nav-link">Services <ChevronDownIcon className="arrow" size={12} /></a>
+              <button className="nav-link">Services <ChevronDownIcon className="arrow" size={12} /></button>
               <div className="dropdown-menu">
-                <a href="#" onClick={(e) => { e.preventDefault(); handleNavigation('store'); }} className="dropdown-link">Store</a>
-                <a href="#" onClick={(e) => { e.preventDefault(); handleNavigation('store'); }} className="dropdown-link">Men's Clothing</a>
-                <a href="#" onClick={(e) => { e.preventDefault(); handleNavigation('store'); }} className="dropdown-link">Women's Clothing</a>
-                <a href="#" onClick={(e) => { e.preventDefault(); handleNavigation('store'); }} className="dropdown-link">Children's Clothing</a>
+                <button onClick={() => handleNavigation('store')} className="dropdown-link">Store</button>
+                <button onClick={() => handleNavigation('store')} className="dropdown-link">Men's Clothing</button>
+                <button onClick={() => handleNavigation('store')} className="dropdown-link">Women's Clothing</button>
+                <button onClick={() => handleNavigation('store')} className="dropdown-link">Children's Clothing</button>
               </div>
             </div>
-            <a href="#" onClick={(e) => { e.preventDefault(); handleNavigation('contact'); }} className="nav-link">Contact</a>
+            <button onClick={() => handleNavigation('contact')} className="nav-link">Contact</button>
           </nav>
           <div className="header-search">
             <div className="search-container">
