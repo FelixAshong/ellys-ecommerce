@@ -65,30 +65,52 @@
 }
 
 .category-box {
-  background: #f8f9fa;
+  background: #ffffff;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
-  padding: 20px 15px;
-  text-align: center;
+  overflow: hidden;
   transition: all 0.3s ease;
   cursor: pointer;
+  position: relative;
 }
 
 .category-box:hover {
-  background: #ffffff;
   border-color: #d1d5db;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.category-box h3 {
+.category-box:hover .category-image img {
+  transform: scale(1.05);
+}
+
+.category-image {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+}
+
+.category-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.category-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.category-content h3 {
   font-size: 1rem;
   font-weight: 600;
   margin: 0 0 5px 0;
   color: #141414;
 }
 
-.category-box p {
+.category-content p {
   font-size: 0.8rem;
   margin: 0;
   color: #6b7280;
@@ -152,15 +174,19 @@
     gap: 15px;
   }
   
-  .category-box {
-    padding: 15px;
+  .category-image {
+    height: 120px;
   }
   
-  .category-box h3 {
+  .category-content {
+    padding: 12px;
+  }
+  
+  .category-content h3 {
     font-size: 0.9rem;
   }
   
-  .category-box p {
+  .category-content p {
     font-size: 0.75rem;
   }
 }
@@ -172,6 +198,14 @@
   
   .banner-categories {
     grid-template-columns: 1fr;
+  }
+  
+  .category-image {
+    height: 100px;
+  }
+  
+  .category-content {
+    padding: 10px;
   }
   
   .banner-cta .btn {
