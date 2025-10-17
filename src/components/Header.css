@@ -19,16 +19,10 @@
   gap: 20px;
 }
 
-.logo h1 {
-  font-family: 'Gugi', cursive;
-  font-size: 28px;
-  font-weight: 600;
-  color: #121212;
-  margin: 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.logo-image {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
 }
 
 .nav-menu {

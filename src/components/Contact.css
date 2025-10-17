@@ -1,6 +1,6 @@
 .contact {
   padding: 80px 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #141414 0%, #141414 100%);
   color: white;
 }
 
@@ -123,7 +123,7 @@
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: #141414;
 }
 
 .form-group textarea {
@@ -134,7 +134,7 @@
 .contact-form .btn {
   width: 100%;
   padding: 15px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #141414 0%, #141414 100%);
   color: white;
   border: none;
   border-radius: 8px;

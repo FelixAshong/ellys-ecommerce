@@ -29,9 +29,9 @@ const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
     <header className="header">
       <div className="container">
         <div className="nav-container">
-          <div className="logo">
-            <h1>ELLY's House</h1>
-          </div>
+        <div className="logo">
+          <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&h=60&fit=crop" alt="ELLY's House" className="logo-image" />
+        </div>
           <nav className={`nav-menu ${isMenuOpen ? 'nav-menu-open' : ''}`}>
             <a href="#" onClick={(e) => { e.preventDefault(); handleNavigation('home'); }} className="nav-link">Home</a>
             <a href="#" onClick={(e) => { e.preventDefault(); handleNavigation('about'); }} className="nav-link">About</a>
