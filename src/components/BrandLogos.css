@@ -62,7 +62,6 @@
 
 .brand-item:hover .brand-logo {
   filter: grayscale(0%);
-  transform: scale(1.05);
 }
 
 /* Responsive Design */
