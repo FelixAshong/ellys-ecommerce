@@ -1,55 +1,120 @@
-﻿/* Footer */
+﻿/* Footer Styles - ASOS Design */
 .footer {
   background: #f8f9fa;
   color: #141414;
-  padding: 60px 0 20px;
+  padding: 40px 0 20px;
   position: relative;
   z-index: 1;
   border-top: 1px solid #e5e7eb;
 }
 
-.footer-content {
+/* Top Section - Social Media & Payment Methods */
+.footer-top {
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.social-payment {
   display: flex;
-  gap: 100px;
-  margin-bottom: 40px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.footer-brand {
-  flex: 1;
-  max-width: 250px;
+.social-media {
+  display: flex;
+  gap: 15px;
 }
 
-.footer-logo {
-  font-family: 'Gugi', cursive;
-  font-size: 24px;
-  font-weight: 400;
+.social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-link.facebook {
+  background: #1877f2;
+  color: white;
+}
+
+.social-link.instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: white;
+}
+
+.social-link.snapchat {
+  background: #fffc00;
+  color: #000;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+}
+
+.payment-methods {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.payment-logo {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  height: 40px;
+}
+
+.payment-logo img {
+  max-width: 100%;
+  max-height: 24px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.payment-logo:hover img {
+  filter: grayscale(0%);
+}
+
+.electron-text {
+  font-size: 8px;
+  font-weight: 600;
   color: #141414;
-  margin-bottom: 10px;
+  margin-left: 4px;
+  letter-spacing: 0.5px;
 }
 
-.footer-brand p {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #6b7280;
-}
-
-.footer-links {
-  display: flex;
-  gap: 80px;
-  flex: 1;
+/* Main Footer Content */
+.footer-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 30px;
 }
 
 .footer-column h4 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.3;
+  font-size: 14px;
+  font-weight: 600;
   color: #141414;
-  margin-bottom: 20px;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .footer-column ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-column ul li {
@@ -57,77 +122,253 @@
 }
 
 .footer-column ul li a {
-  color: #939393;
+  color: #6b7280;
   text-decoration: none;
   font-size: 14px;
-  line-height: 1.6;
   transition: color 0.3s ease;
 }
 
 .footer-column ul li a:hover {
-  color: #FFFFFF;
+  color: #141414;
 }
 
-.contact-info {
+/* Shopping From Section */
+.shopping-info {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
-.contact-item {
+.current-region {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 10px;
-}
-
-.contact-icon {
-  font-size: 16px;
-  margin-top: 2px;
-}
-
-.contact-item span:last-child {
   font-size: 14px;
-  line-height: 1.6;
-  color: #939393;
+  color: #6b7280;
 }
 
+.flag-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.flag {
+  width: 20px;
+  height: 15px;
+  border-radius: 2px;
+  border: 1px solid #e5e7eb;
+}
+
+.ghana-flag {
+  background: linear-gradient(to bottom, #ce1126 0%, #ce1126 33%, #fcd116 33%, #fcd116 66%, #ce1126 66%, #ce1126 100%);
+  position: relative;
+}
+
+.ghana-flag::after {
+  content: '★';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  font-size: 8px;
+}
+
+.international-sites p {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 0 0 10px 0;
+}
+
+.country-flags {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  max-width: 200px;
+}
+
+.country-flags .flag {
+  width: 18px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+/* Country Flag Colors */
+.spain-flag {
+  background: linear-gradient(to bottom, #c60b1e 0%, #c60b1e 25%, #ffc400 25%, #ffc400 75%, #c60b1e 75%, #c60b1e 100%);
+}
+
+.germany-flag {
+  background: linear-gradient(to bottom, #000 0%, #000 33%, #dd0000 33%, #dd0000 66%, #ffce00 66%, #ffce00 100%);
+}
+
+.australia-flag {
+  background: #00008b;
+  position: relative;
+}
+
+.australia-flag::after {
+  content: '★';
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  color: white;
+  font-size: 6px;
+}
+
+.france-flag {
+  background: linear-gradient(to right, #002395 0%, #002395 33%, #ffffff 33%, #ffffff 66%, #ed2939 66%, #ed2939 100%);
+}
+
+.denmark-flag {
+  background: #c60c30;
+  position: relative;
+}
+
+.denmark-flag::after {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 8px;
+  font-weight: bold;
+}
+
+.italy-flag {
+  background: linear-gradient(to right, #009246 0%, #009246 33%, #ffffff 33%, #ffffff 66%, #ce2b37 66%, #ce2b37 100%);
+}
+
+.netherlands-flag {
+  background: linear-gradient(to bottom, #ae1c28 0%, #ae1c28 33%, #ffffff 33%, #ffffff 66%, #21468b 66%, #21468b 100%);
+}
+
+.poland-flag {
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #dc143c 50%, #dc143c 100%);
+}
+
+.usa-flag {
+  background: #b22234;
+  position: relative;
+}
+
+.usa-flag::after {
+  content: '★';
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  color: white;
+  font-size: 4px;
+}
+
+.sweden-flag {
+  background: #006aa7;
+  position: relative;
+}
+
+.sweden-flag::after {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fecb00;
+  font-size: 6px;
+  font-weight: bold;
+}
+
+/* Bottom Bar */
 .footer-bottom {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  padding: 20px 0;
-  border-top: 1px solid rgba(232, 232, 232, 0.2);
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
 }
 
 .footer-copyright {
   font-size: 14px;
-  line-height: 1.6;
-  color: #939393;
+  color: #6b7280;
 }
 
-.social-links {
+.footer-legal {
   display: flex;
+  align-items: center;
   gap: 10px;
+  font-size: 14px;
 }
 
-.social-link {
-  font-size: 20px;
+.footer-legal a {
+  color: #6b7280;
   text-decoration: none;
-  transition: transform 0.3s ease;
+  transition: color 0.3s ease;
 }
 
-.social-link:hover {
-  transform: scale(1.1);
+.footer-legal a:hover {
+  color: #141414;
 }
 
+.footer-legal span {
+  color: #d1d5db;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;
-    gap: 40px;
+  .footer-main {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   }
   
-  .footer-links {
+  .social-payment {
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  .payment-methods {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .payment-logo {
+    min-width: 60px;
+    height: 35px;
+    padding: 6px 8px;
+  }
+  
+  .payment-logo img {
+    max-height: 20px;
+  }
+  
+  .country-flags {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .social-media {
+    gap: 10px;
+  }
+  
+  .social-link {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .payment-methods {
+    justify-content: center;
   }
 }

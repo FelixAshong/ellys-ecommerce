@@ -20,31 +20,31 @@ const FeaturedProducts: React.FC = () => {
   const products: Product[] = [
     {
       id: 1,
-      name: "Women's Denim Jacket",
-      price: "$34.5",
+      name: "ELLY's House oversized hooded puffer jacket in grey",
+      price: "$125.00",
       image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=300&h=400&fit=crop",
       rating: "4.5",
       badge: "New"
     },
     {
       id: 2,
-      name: "Man's Formal Shirt",
-      price: "$21.4",
+      name: "ELLY's House relaxed tech trousers with drawstring waist in black",
+      price: "$143.00",
       image: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=300&h=400&fit=crop",
       rating: "4.5",
       badge: "New"
     },
     {
       id: 3,
-      name: "Women's Collared T-shirt",
-      price: "$17.5",
+      name: "ELLY's House relaxed long sleeve knitted crew neck t-shirt in grey marl",
+      price: "$38.00",
       image: "https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=300&h=400&fit=crop",
       rating: "5.0"
     },
     {
       id: 4,
-      name: "Men's T-shirt",
-      price: "$15.3",
+      name: "ELLY's House heavyweight oversized t-shirt in white",
+      price: "$31.00",
       image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=300&h=400&fit=crop",
       rating: "5.0"
     }

@@ -1,83 +1,123 @@
 ﻿import React from 'react';
 import './Footer.css';
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebook, FaInstagram, FaTwitter, FaPinterest, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaSnapchat } from 'react-icons/fa';
 
 // Type assertion to fix TypeScript issues with react-icons
-const MapIcon = FaMapMarkerAlt as any;
-const PhoneIcon = FaPhone as any;
-const EmailIcon = FaEnvelope as any;
 const FacebookIcon = FaFacebook as any;
 const InstagramIcon = FaInstagram as any;
-const TwitterIcon = FaTwitter as any;
-const PinterestIcon = FaPinterest as any;
-const LinkedinIcon = FaLinkedin as any;
+const SnapchatIcon = FaSnapchat as any;
 
 const Footer: React.FC = () => {
   return (
     <footer className="footer">
       <div className="container">
-        <div className="footer-content">
-          <div className="footer-brand">
-            <h3 className="footer-logo">ELLY's House</h3>
-            <p>Your trusted fashion destination for men's, women's, and children's clothing. Quality, style, and affordability in every piece.</p>
+        {/* Top Section - Social Media & Payment Methods */}
+        <div className="footer-top">
+          <div className="social-payment">
+            <div className="social-media">
+              <a href="#" className="social-link facebook">
+                <FacebookIcon />
+              </a>
+              <a href="#" className="social-link instagram">
+                <InstagramIcon />
+              </a>
+              <a href="#" className="social-link snapchat">
+                <SnapchatIcon />
+              </a>
+            </div>
+            <div className="payment-methods">
+              <div className="payment-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png" alt="Visa" />
+              </div>
+              <div className="payment-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1280px-Mastercard-logo.svg.png" alt="Mastercard" />
+              </div>
+              <div className="payment-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/1280px-PayPal.svg.png" alt="PayPal" />
+              </div>
+              <div className="payment-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/American_Express_logo.svg/1280px-American_Express_logo.svg.png" alt="American Express" />
+              </div>
+              <div className="payment-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png" alt="Visa Electron" />
+                <span className="electron-text">ELECTRON</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Main Footer Content */}
+        <div className="footer-main">
+          <div className="footer-column">
+            <h4>HELP & INFORMATION</h4>
+            <ul>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Track order</a></li>
+              <li><a href="#">Delivery & returns</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
           </div>
           
-          <div className="footer-links">
-            <div className="footer-column">
-              <h4>About Us</h4>
-              <ul>
-                <li><a href="#">Our Story</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Press</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Shipping & Returns</a></li>
-                <li><a href="#">Size Guide</a></li>
-              </ul>
-            </div>
-            
-            <div className="footer-column">
-              <h4>Shop</h4>
-              <ul>
-                <li><a href="#">Men's Clothing</a></li>
-                <li><a href="#">Women's Clothing</a></li>
-                <li><a href="#">Children's Clothing</a></li>
-                <li><a href="#">New Arrivals</a></li>
-                <li><a href="#">Sale</a></li>
-                <li><a href="#">Accessories</a></li>
-              </ul>
-            </div>
-            
-            <div className="footer-column">
-              <h4>Contact Us</h4>
-              <div className="contact-info">
-                <div className="contact-item">
-                  <span className="contact-icon"><MapIcon /></span>
-                  <span>123 Fashion St., Suite 456<br />City, State, ZIP Code</span>
+          <div className="footer-column">
+            <h4>ABOUT ELLY'S HOUSE</h4>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Careers at ELLY's House</a></li>
+              <li><a href="#">Corporate responsibility</a></li>
+              <li><a href="#">Investors' site</a></li>
+            </ul>
+          </div>
+          
+          <div className="footer-column">
+            <h4>MORE FROM ELLY'S HOUSE</h4>
+            <ul>
+              <li><a href="#">Mobile and ELLY's House apps</a></li>
+              <li><a href="#">Gift vouchers</a></li>
+              <li><a href="#">Black Friday</a></li>
+              <li><a href="#">ELLY's House x Thrift+</a></li>
+            </ul>
+          </div>
+          
+          <div className="footer-column">
+            <h4>SHOPPING FROM:</h4>
+            <div className="shopping-info">
+              <div className="current-region">
+                <span>You're in</span>
+                <div className="flag-container">
+                  <div className="flag ghana-flag"></div>
+                  <span>CHANGE</span>
                 </div>
-                <div className="contact-item">
-                  <span className="contact-icon"><PhoneIcon /></span>
-                  <span>+1 (123) 456-7890</span>
-                </div>
-                <div className="contact-item">
-                  <span className="contact-icon"><EmailIcon /></span>
-                  <span>support@fancy.com</span>
+              </div>
+              <div className="international-sites">
+                <p>Some of our international sites:</p>
+                <div className="country-flags">
+                  <div className="flag spain-flag"></div>
+                  <div className="flag germany-flag"></div>
+                  <div className="flag australia-flag"></div>
+                  <div className="flag france-flag"></div>
+                  <div className="flag denmark-flag"></div>
+                  <div className="flag italy-flag"></div>
+                  <div className="flag netherlands-flag"></div>
+                  <div className="flag poland-flag"></div>
+                  <div className="flag usa-flag"></div>
+                  <div className="flag sweden-flag"></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        
+
+        {/* Bottom Bar */}
         <div className="footer-bottom">
           <div className="footer-copyright">
-            <span>© 2024 ELLY's House. All rights reserved.</span>
+            <span>© 2025 ELLY's House</span>
           </div>
-          <div className="social-links">
-            <a href="#" className="social-link"><FacebookIcon /></a>
-            <a href="#" className="social-link"><InstagramIcon /></a>
-            <a href="#" className="social-link"><TwitterIcon /></a>
-            <a href="#" className="social-link"><PinterestIcon /></a>
-            <a href="#" className="social-link"><LinkedinIcon /></a>
+          <div className="footer-legal">
+            <a href="#">Privacy & Cookies</a>
+            <span>|</span>
+            <a href="#">Ts&Cs</a>
+            <span>|</span>
+            <a href="#">Accessibility</a>
           </div>
         </div>
       </div>
